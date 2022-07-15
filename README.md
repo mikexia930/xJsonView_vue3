@@ -1,6 +1,6 @@
 # x-json-view-vue
 
-[Demo](https://mikexia930.github.io/xJsonView_vue3/)
+[Demo](https://mikexia930.github.io/xJsonView/)
 
 ### 版本
 ***
