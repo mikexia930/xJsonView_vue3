@@ -1,7 +1,7 @@
 {
   "name": "x-json-view-vue3",
   "description": "Vue3 component for json view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "keywords": [
     "vue3",

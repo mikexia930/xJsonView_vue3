@@ -10,7 +10,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'packages/index.js'),
       name: 'XJsonView',
-      fileName: (format) => `x-json-view-vue3.${format}.js`
+      fileName: 'x-json-view-vue3'
     },
     rollupOptions: {
       // 确保外部处理那些你不想打包进库的依赖
