@@ -1,0 +1,44 @@
+{
+  "name": "x-json-view-vue3",
+  "description": "Vue3 component for json view",
+  "version": "1.0.0",
+  "private": false,
+  "keywords": [
+    "vue3",
+    "component",
+    "json view",
+    "json format"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "main": "./dist/x-json-view-vue3.umd.js",
+  "module": "./dist/x-json-view-vue3.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/x-json-view-vue3.es.js",
+      "require": "./dist/x-json-view-vue3.umd.js"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vitejs/plugin-vue-jsx": "^1.1.6",
+    "@vue/compiler-sfc": "^3.0.5",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "vite": "^2.4.0"
+  }
+}
