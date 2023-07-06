@@ -1,7 +1,7 @@
 {
   "name": "x-json-view-vue3",
   "description": "Vue3 component for json view",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "keywords": [
     "vue3",
@@ -31,6 +31,7 @@
     "dist/*"
   ],
   "dependencies": {
+    "json5": "^1.0.1",
     "vue": "^3.0.5"
   },
   "devDependencies": {

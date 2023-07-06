@@ -21,6 +21,7 @@
 </template>
 
 <script lang="jsx">
+import JSON5 from 'json5';
 /**
  * json 具体条目组件
  */
@@ -203,10 +204,15 @@ export default {
         this.parseData = JSON.parse(this.jsonData);
         this.formalData.type = Array.isArray(this.parseData) ? 'array' : 'object';
       } catch (err) {
-        this.isValidData = false;
-        this.emitTo('parseError', {
-          jsonData: this.jsonData,
-        });
+        try {
+          this.parseData = JSON5.parse(this.jsonData);
+          this.formalData.type = Array.isArray(this.parseData) ? 'array' : 'object';
+        } catch (err) {
+          this.isValidData = false;
+          this.emitTo('parseError', {
+            jsonData: this.jsonData,
+          });
+        }
       }
     },
     formatData() {
